@@ -1,0 +1,76 @@
+VBA基本構文
+
+VBE(Visual Basic Editor)起動
+⇒Alt+F11
+
+マクロの実行
+⇒F5
+
+標準モジュールの追加
+⇒「挿入」-「標準モジュール」
+
+変数宣言
+⇒「ツール」-「オプション」で"変数の宣言を強制する"にチェック
+　※モジュール頭に「Option Explicit」が自動挿入される
+
+プロシージャ
+⇒一連の処理をまとめたもの
+
+※Subプロシージャ
+⇒引数を受け取るのみ
+
+※Functionプロシージャ
+⇒引数を受け取り、戻り値を返す
+
+記述構成
+
+Sub Main()　※プロシージャ名
+
+　'########' ※コメント「'」
+  '  処理  '
+  '########'
+
+End Sub
+
+メッセージボックス
+⇒
+
+MsgBox "Hello world"
+
+イミディエイト ウィンドウ出力
+⇒
+
+Debug.Print "Hello world"
+
+※デバック時に利用
+
+変数の宣言
+⇒変数
+
+Dim num As Integer
+
+⇒配列変数
+
+Dim students() As String
+
+データ型
+⇒Inteegr　整数型
+
+⇒Long	　 長整数)型
+
+⇒Single　 単精度浮動少数点型
+
+⇒Double　 倍精度浮動少数点型
+
+⇒Currency 通貨型
+
+⇒String　 文字列型
+
+⇒Date　　 日付型
+
+⇒Object　 オブジェクト型
+
+⇒Variant  バリアント型
+
+Boolean　　ブール型
+
