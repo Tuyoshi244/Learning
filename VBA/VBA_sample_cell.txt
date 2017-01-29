@@ -1,0 +1,18 @@
+sub CellSample()
+
+'シートのA1に文字を入力
+Range("A1").Value = "test"
+
+'シートの B2 (2行目, 2列目) に文字を入力
+Cells(2,2).Value="test"
+
+'ワークシート「Sheet2」のA1に文字を入力
+Worksheets("Sheet2").Range("A1").Value="test"
+
+'RowHeightプロパティ(セルの高さを設定)
+Cells(1,1).RowHeight=15
+
+'ColumnWidthプロパティ(セルの幅を設定)
+Cells(1,1).ColumnWidth=30
+
+End sub
