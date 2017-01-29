@@ -1,0 +1,16 @@
+HTML基本構文
+
+ファイルの拡張子
+⇒.html
+
+基本構成
+⇒
+<html>
+	<head>
+		<title>タイトル</title>
+	</head>
+	<body>
+	コンテンツ
+	</body>
+</html> 
+
