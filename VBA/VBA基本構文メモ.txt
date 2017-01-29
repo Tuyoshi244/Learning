@@ -74,3 +74,39 @@ Dim students() As String
 
 Boolean　　ブール型
 
+If～ElseIf～Else ステートメント
+⇒
+If 条件式1 Then
+    条件式1を満たした場合の処理
+ElseIf 条件式2 Then
+    条件式2を満たした場合の処理
+Else
+    条件式1と条件式2を満たさなかった場合の処理
+End If
+
+Select Case～ステートメント
+⇒
+Select Case 変数A
+    Case 値1
+        変数Aが値1と等しい場合の処理
+    Case 値2
+        変数Aが値2と等しい場合の処理
+    Case Else
+       変数Aが上記以外の場合の処理
+End Select
+
+Case IS(条件比較)
+⇒
+Select Case 変数A
+    Case Is 比較条件1
+       変数Aが比較条件1を満たした場合の処理
+    Case Else
+       変数Aが上記以外の場合の処理
+End Select
+
+Withステートメント
+⇒
+With オブジェクト名
+     設定1
+     設定2
+End With
