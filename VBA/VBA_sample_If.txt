@@ -1,0 +1,29 @@
+※注意：「変数が定義されていません」エラーが出る場合
+　　　　　"Option Explicit"を外してください。
+
+使い方：シートの適当なところにフォームコントロールのボタンを挿入し
+　　　　下記プログラムを配置してください。
+
+
+sub IfSample()
+
+'変数を宣言とデータ型
+	Dim intdate As Integer
+
+'メッセージボックスで変数を代入
+	intdata = CInt(InputBox("10までの好きな数字を入れてください","値入力"))
+
+'分岐①
+	If intdata < 5 Then
+
+		MsgBox "5より小さいですね"
+
+'分岐①にあてはまらなかったら
+	Else
+
+		MsgBox "5より大きいですね"
+
+'分岐処理終了
+	End If
+
+End sub
