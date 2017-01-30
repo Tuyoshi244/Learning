@@ -15,4 +15,20 @@ Cells(1,1).RowHeight=15
 'ColumnWidthプロパティ(セルの幅を設定)
 Cells(1,1).ColumnWidth=30
 
+'ワークシートのA1からE3の範囲に文字を入力(パターン①)
+Range("A1:E3").Value="test"
+
+'ワークシートのA1からE3の範囲に文字を入力(パターン②)
+Range("A1","E3").Value="test"
+
+'ワークシートのA1からE3の範囲に文字を入力(パターン②)
+Range(Cells(1,1),Cells(5,3)).Value="test"
+
+'ワークシートの2～4行目の2行全てのセルに文字を入力(パターン①)
+Range("B2:D5").EntireRow.Value="test"
+
+'ワークシートの2～4行目の2行全てのセルに文字を入力(パターン②)
+Range(Cells(2,2),Cells(4, 5)).EntireRow.Value="test"
+
+
 End sub
