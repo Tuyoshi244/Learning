@@ -9,6 +9,21 @@ Cells(2,2).Value="test"
 'ワークシート「Sheet2」のA1に文字を入力
 Worksheets("Sheet2").Range("A1").Value="test"
 
+'シートのセルA1～C3の範囲を全てクリア
+Range(Cells(1,1),Cells(3,3)).Clear
+
+'シートのセルA1～C3の範囲の数式、文字列をクリア
+Range("A1:C3").ClearContents
+
+'アクティブシートのセル全範囲をクリア
+Cells.Clear
+
+'Sheet1のセルA1～C3の範囲の書式をクリア
+Worksheets("Sheet1").Range("A1:C3").ClearFormats
+
+'Sheet1のセル全範囲のコメント文をクリア
+Worksheets("Sheet1").Cells.ClearComments
+
 'RowHeightプロパティ(セルの高さを設定)
 Cells(1,1).RowHeight=15
 
@@ -22,7 +37,7 @@ Range("A1:E3").Value="test"
 Range("A1","E3").Value="test"
 
 'ワークシートのA1からE3の範囲に文字を入力(パターン②)
-Range(Cells(1,1),Cells(5,3)).Value="test"
+Range(Cells(1,1),Cells(3,5)).Value="test"
 
 'ワークシートの2～4行目の2行全てのセルに文字を入力(パターン①)
 Range("B2:D5").EntireRow.Value="test"
@@ -30,5 +45,10 @@ Range("B2:D5").EntireRow.Value="test"
 'ワークシートの2～4行目の2行全てのセルに文字を入力(パターン②)
 Range(Cells(2,2),Cells(4, 5)).EntireRow.Value="test"
 
+'ワークシートのB行～E列の4列全てのセルに文字を入力(パターン①)
+Range("B2:E3").EntireColumn.Value="Excel VBA"
+
+'ワークシートのB行～E列の4列全てのセルに文字を入力(パターン②)
+Range(Cells(2,2),Cells(3, 5)).EntireColumn.Value="Excel VBA"
 
 End sub
