@@ -1,0 +1,18 @@
+※注意：「変数が定義されていません」エラーが出る場合
+　　　　　"Option Explicit"を外してください。
+
+Sub ForSample()
+
+'基本形(変数 = 初期値 To 終了値)
+For i = 1 To 5
+    Worksheets("Sheet1").Cells(i, 1).Value = i
+Next
+
+' ループは10回指定だが、7回目でループを抜ける
+For i = 1 To 10
+    If i = 7 Then Exit For
+    Worksheets("Sheet1").Cells(i, 1).Value = i
+Next
+
+
+End Sub
