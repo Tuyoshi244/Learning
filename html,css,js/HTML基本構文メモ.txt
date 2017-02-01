@@ -5,12 +5,12 @@ HTML基本構文
 
 基本構成
 ⇒
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>タイトル</title>
-	</head>
-	<body>
+<head>
+	<title>タイトル</title>
+</head>
+<body>
 	コンテンツ
-	</body>
-</html> 
-
+</body>
+</html>
