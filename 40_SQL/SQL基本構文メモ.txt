@@ -1,1 +1,50 @@
-準備中
+SQL基本構文メモ
+
+・データ定義文（DDL=Data Definition Language)
+
+CREATE
+⇒データベースオブジェクト(テーブル、インデックス、制約など)
+DROP
+データベースオブジェクトを削除
+ALTER
+データベースオブジェクトの定義変更
+
+・データ制御文（DCL=Data Control Language）
+
+GRANT
+⇒特定のデータベース利用者に、特定の作業を行う権限を付与
+REVOKE
+⇒特定のデータベース利用者から、権限を削除
+SET TRANSACTION
+⇒トランザクションモードを設定
+BEGIN
+⇒トランザクションを開始
+COMMIT
+⇒トランザクションを確定
+ROLLBACK
+⇒トランザクションを取り消し
+SAVEPOINT
+⇒任意にロールバック地点を設定
+LOCK
+⇒テーブルなどの資源をロック
+
+・データ操作文（DML=Data Manipulate Language)
+
+INSERT INTO
+⇒レコードを挿入
+UPDATE ～ SET
+⇒レコードを更新
+DELETE FROM
+⇒レコードを削除
+SELECT ～ FROM ～ WHERE
+⇒レコードを検索し、結果集合を取り出す
+
+--------------------------------------------------------------------
+SELECT文
+⇒
+SELECT 列名1, 列名2, ・・・ FROM テーブル名 WHERE 条件
+
+例
+SELECT * FROM table_test
+※*はワイルドカードで全列指定
+---------------------------------------------------------------------
