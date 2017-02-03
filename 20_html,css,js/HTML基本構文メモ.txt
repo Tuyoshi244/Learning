@@ -6,7 +6,7 @@ HTML基本構文
 基本構成
 ⇒
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
 	<title>タイトル</title>
 </head>
