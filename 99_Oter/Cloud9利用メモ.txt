@@ -21,3 +21,36 @@ Webブラウザ上でVim、Emacs、Sublimeなどのエディタとの互換モード、キー割当ての変更
 ⑥Create workspacesをクリックしスタート(選んだテンプレートによっては構築に時間がかかる)
 
 ※ローカルのファイルはドラック＆ドロップで追加可能
+
+HTMLファイルの表示
+⇒「Preview」から「Live Preview」
+
+WEBサーバ利用
+⇒「Run」からURLクリック
+
+UNIXコマンドでのファイル作成
+⇒$ touch ファイル名
+
+DB利用方法
+⇒SQLite(コマンドラインから)
+$ sqlite3 test.db
+⇒テーブルの作成
+create table users(id,name);
+⇒テーブル確認
+.tables
+⇒テーブル構造確認
+.schema users
+⇒終了
+.exit
+
+⇒mySQL(コマンドラインから)
+$ mysql-ctl cli
+⇒DB作成
+create database test;
+⇒DB確認
+show databases;
+⇒文字コード確認
+show variables like "chara%";
+⇒終了
+\q
+

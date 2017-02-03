@@ -7,10 +7,11 @@ HTML基本構文
 ⇒
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-	<title>タイトル</title>
-</head>
-<body>
-	コンテンツ
-</body>
+	<head>
+		<meta charset="utf-8">
+		<title>タイトル</title>
+	</head>
+	<body>
+		<h1>コンテンツ</h1>
+	</body>
 </html>
