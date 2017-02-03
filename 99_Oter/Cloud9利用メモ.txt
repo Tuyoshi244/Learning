@@ -1,0 +1,23 @@
+公式サイト
+⇒
+https://c9.io
+
+※Cloud9とは
+⇒Amazonの統合開発環境(IDE)
+OS:Ubuntu(Dockerコンテナ上に構築)
+RAM:512M
+HD:2GB
+Ruby on Rails、Node.js、PHP、C++、HTML5、Python、Goなど40以上の言語に対応
+Webブラウザ上でVim、Emacs、Sublimeなどのエディタとの互換モード、キー割当ての変更、コード補完、Node.js/JavaScript対応のデバッガ、ターミナル機能、イメージエディタなど
+
+
+利用方法
+⇒
+①ダッシュボードでWorkspacesを作成
+②Workspacesの名前を決める(説明は任意)
+③PrivateかPublicを選ぶ(無料アカウントのPrivateは1つまで)
+④GitからClone可能(オプション)
+⑤テンプレートを選ぶ(特になければBlank)
+⑥Create workspacesをクリックしスタート(選んだテンプレートによっては構築に時間がかかる)
+
+※ローカルのファイルはドラック＆ドロップで追加可能
