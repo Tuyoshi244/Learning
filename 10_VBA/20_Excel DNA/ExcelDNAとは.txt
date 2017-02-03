@@ -1,0 +1,4 @@
+Excel DNAとは
+
+.NET Frameworkでアドインを開発するためのライブラリ
+Visual Studioで開発が可能
