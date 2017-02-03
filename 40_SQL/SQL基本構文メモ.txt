@@ -1,4 +1,4 @@
-SQL基本構文メモ
+SQL基本構文
 
 ・データ定義文（DDL=Data Definition Language)
 
