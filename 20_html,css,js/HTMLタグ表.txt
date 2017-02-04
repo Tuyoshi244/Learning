@@ -1,0 +1,209 @@
+タグ一覧
+
+<html> </html> 	:HTML文書 
+<head> </head> 	:ヘッダー 
+<body> </body> 	:ボディ（本文）文書全体のデザインを設定
+  		background="filename" 背景のタイルイメージを指定
+  		bgcolor   =#rrggbb or colorname 背景の色
+  		text      =#rrggbb or colorname テキストの色
+  		link      =#rrggbb or colorname リンクの色
+ 		vlink     =#rrggbb or colorname アクセス済みのリンク色
+  		alink     =#rrggbb or colorname アクセス中のリンクの色
+  		onLoad    =code  HTMLファイルの読み込み完了時に実行するイベントハンドラ
+  		onUnload  =code  HTMLファイルの表示終了時に実行するイベントハンドラ
+<!-- 　--> 	:注釈（コメント） 
+
+・ヘッダー
+<title> </title> 	:タイトル 
+<isindex> </isindex> 	:キーワード検索
+<base> </base>		:基準URL　相対パスのURLは，ここでの設定が基準となる
+<meta> </meta> 		:文書情報
+<link> </link> 		:文書の前後関係などを定義
+  			href=url
+  			rel=link_type  複数文書間の順方向の関係を定義
+  			rev=link_type  複数文書間の逆方向の関係を定義
+ 			 type=　　　　　スタイルシートの形式
+<script> </script> 	:使用するスクリプト言語を宣言する
+
+・ページレイアウト
+<hn> </hn> 		:見出し文字（n=1 最大 ～ n=6 最小）
+<hr>  			:横罫線を引く
+  			width = n, n%  線の長さ（pixel or %)
+ 		 	size  = n      線の太さ（pixel）
+  			align = left , center , right
+  			noshade　      平面的に表示
+<br> 			:強制改行
+  			clear = all , left , right　イメージに対するテキストの回り込みを解除する
+<p> </p> 		:段落
+  			align = left, center, right
+<center> </center> 	:センタリング
+<div> </div> 		:分割テキスト（左・中央・右揃え）
+  			align = left, center, right
+<pre> </pre> 		:整形済みテキスト（改行やタブをそのまま表示）
+<blockquote> </blockquote> :ブロック引用（上下に空白行，左右がインデントされる）
+<address> </address>  	:アドレス情報（イタリック体で表示される）
+<noscript> </noscript> 	:スクリプト言語未対応ブラウザで表示される範囲を指定 
+
+・フォント
+<font> </font> 		:フォント
+  			size=n   最大はn=7
+  			size=±n  basefontに対する相対値 n=1～6
+  			color=#rrggbb, colorname フォント色指定
+<basefont> 		:ベースフォント
+  			size = n
+<i> </i> 		:イタリック体 
+<tt> </tt> 		:等幅フォント 
+<b> </b> 		:ボールド 
+<u> </u> 		:アンダーライン 
+<strike> </strike> 	:打ち消し線 
+<big> </big> 		:大きめのフォント 
+<small> </small> 	:小さめのフォント 
+<sub> </sub> 		:下付文字　H2O 
+<sup> </sup> 		:上付文字　x2+y2=9 
+<em> </em> 		:強調文字 
+<strong> </strong> 	:強い強調 
+<code> </code> 		:プログラムコード PROGRAM CODES 
+<samp> </samp> 		:USED FOR SAMPLE OUTPUT 
+<kbd> </kbd> 		:KEYBOARD TYPED 
+<var> </var> 		:変数名 variables 
+<cite> </cite> 		:引用　used for citations 
+
+・リスト
+<ul> </ul> 		:番号なしリスト Unnumbered List
+  			type=disk, circle, square　　行頭記号の種類設定
+<ol> </ol> 		:番号付きリスト Ordered List
+  			type=1, a, A, i, I 　　　　　行頭番号の種類設定
+  			start=n　　開始番号（数値）
+<li> </li> 		:リスト項目
+  			type=disk, circle, square　　(<ul> </ul>の場合のみ)
+  			type=1, a, A, i, I　　(<ol> </ol>の場合のみ）
+  			value=n　　開始番号（数値）
+<dl> </dl> 		:定義型リスト Definition Lists 
+<dt> </dt> 		:定義語　 Term name 
+<dd> </dd> 		:定義内容 Term Definition 
+
+・TABLE
+<table> </table> 	:表組み
+  			align=left, center, right
+  			border=n　     表の外枠の太さ（pixel default:1）
+  			width=n, n%    表の幅（pixel or %）
+  			height=n, n%   表の高さ（pixel or %）
+  			cellspacing=n  表の枠の太さ（pixel default:2）
+  			cellpadding=n  枠と文字の間隔（pixel default:1）
+<tr> </tr> 		:表の行
+  			align=left, center, right　左右の配置
+  			valign=top, middle, bottom 　上下の配置
+<th> </th> 		:表の見出し要素（字体がボールドになる）
+  			width=n　　セルの幅
+  			height=n　 セルの高さ
+  			rowspan=n　複数行にまたがるセルの指定
+  			colspan=n　複数列にまたがるセルの指定
+  			nowrap　　 セル内折り返し禁止
+  			align=left, center, right　　左右配置(default:center)
+  			valign=top, middle, bottom   上下配置(default:middle)
+  			bgcolor=#rrggbb , colorname  セルの背景色
+<td> </td> 		:表のデータ要素
+  			width=n　　セルの幅
+  			height=n　 セルの高さ
+  			rowspan=n　複数行にまたがるセルの指定
+  			colspan=n　複数列にまたがるセルの指定
+  			nowrap　　 セル内折り返し禁止
+  			align=left, center, right　　左右配置(default:left)
+  			valign=top, middle, bottom   上下配置(default:middle)
+  			bgcolor=#rrggbb , colorname  セルの背景色
+<caption> </caption> 	:表題
+ 	 		align=top, bottom 　(default:top)
+ 
+・ハイパーリンク
+<a> </a> 		:アンカー　Anchor
+  			href="url"　　　　 リンク先のURL
+  			href="#marker_name"　ページ内のアンカーに飛ぶ
+  			href="mailto:your@mail.address"　メール機能呼び出し
+  			name="marker_name"　 ページ内にアンカーを設定 
+  			target=frame_name　表示するフレームを指定
+  			target=top　　　　 別ウィンドウを開いて表示
+  			target=_top　　　  フレームを解除して表示
+
+・イメージ
+<img> 			:イメージ Inline Image
+  			src="url" 表示するイメージのURL
+  			alt="text"  画像を表示できないときの説明
+  			align=top　　　 テキストを画像の上端に合わせる
+  　    		middle                    中央に
+        		bottom                    下端に
+        		left　　　画像を左に配置しテキストを回り込ませる
+        		right　　 　　　右に配置し
+  			width=n, n% 　　画像の幅
+  			height=n, n%　　画像の高さ
+  			border=n　　　　枠線の太さ
+  			hspace=n　　　　画像左右のスペース
+  			vspace=n　　　　画像上下のスペース
+  			usemap=url#map_name クライアントサイド・イメージマップ
+  			ismap=url#map_name  サーバーサイド・イメージマップ
+<map> </map> 		:イメージマップの指定
+  			name=map_name（必須 usemapで指定したmap_name）
+<area> 			:イメージマップデータ　<map> </map>内でリンク先を指定
+  			shape=rect　　リンク領域形状 四角形
+        		circle　　　　　　　　 円形
+        		poly　　　　　　　　　 多角形
+  			coords="x1,y1,x2,y2"　　四角形の場合”左上と右下の座標”
+				"x,y,r"　　　　  円形の場合　”中心の座標，半径”
+  　　　 			"x1,y1,x2,y2,.." 多角形の場合左上から反時計回りに頂点の座標
+ 	 		href="url"　 指定したareaでのリンク先
+  			alt="text"　 イメージの内容を記述
+ 
+・フォーム
+<form> </form> 		:フォーム
+  			action="処理するCGIプログラムのURL"
+        			="mailto:address"
+  			method="POST", "GET" 
+  			enctype="multipart/form-data"
+  　　			内容を文字コードに合わせてエンコードして送信
+<input> 		:入力エリアの作成
+  			type=text　　　テキストフィールド（デフォルト）
+       			password　パスワードフィールド
+       			checkbox　チェックボックス
+       			radio　　 ラジオボタン
+       			submit　　送信ボタン
+       			image　　 グラフィカル送信ボタン
+       			reset　　 リセットボタン
+       			file　　　ファイル名入力
+       			hidden　　隠蔽フィールド
+  			name=　　    　入力フィールド名
+  			value=　     　データのデフォルト値，ボタン名
+  			checked      　type=checkbox, radio のデフォルトチェック
+  			size=n       　type=text, file の入力フィールド幅 (default:20)
+  			maxlength=n  　type=text, password 時に入力できる最大文字数
+  			src=url　    グラフィカル送信ボタンのイメージURL
+  			align=top, middle, bottom, left, right
+  　　　       		グラフィカル送信ボタン時のテキスト配置
+ 
+<select> </select> 	:選択メニュー
+  			name=　　 selectメニュー名（必須）
+  			size=n    複数表示時の行数
+  			multiple　複数項目の選択を許可
+<option> </option> 	:<select> </select>内で選択項目を指定
+  			selected　　　デフォルトで選択された状態にしておく
+  			value="text"  選択項目の代わりに送信したいデータ
+<textarea> </textarea> 	:複数行テキスト入力フィールド
+  			name=　　テキストフィールド名
+  			rows=n   縦サイズ（行数）
+  			cols=n   横サイズ（１行文字数）
+  			wrap=soft   横サイズに合わせて改行（画面表示のみ）
+       			hard　 横サイズに合わせて改行（送信時に改行コード付加）
+       			off    改行なし（デフォルト）
+ 
+・JAVA
+<applet> </applet> 	:Java Appletの設定
+  			codebase="Java AppletのURL"
+  			code="Java Appletのclassファイル"　（必須）
+  			alt="Java未対応ブラウザ用代用テキスト"
+  			name="Java Applet名"
+  			width=n, n%　（必須）
+  			height=n, n% （必須）
+  			align=top, middle, bottom, left, right
+  			hspace=n
+  			vspace=n
+<param> </param> 	:Java Appletのパラメータ
+  			name="パラメータ名" （必須）
+  			value="パラメータの値" 
